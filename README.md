@@ -4,7 +4,73 @@ A intenção desse template é mostrar uma forma de estrutura de projeto mobile 
 
 Lembrando: Esse template não está escrito em pedra, ou seja, pode ser alterado conforme a necessidade do projeto, a ideia é dar um norte de como já sair com o projeto estruturado.
 
-## Estrutura de pastas
+
+## Como devemos começar um projeto React Native?
+
+```bash
+npx create-expo-app@latest --template bare-minimum  
+```
+
+Após você rodar o comando acima, você tera o projeto cruo.
+
+Se baseie nesse template para estruturar o seu projeto.
+
+**Não** esqueça de adicionar o `.github` ao seu projeto.
+
+## Configurações do Github
+
+Não se esqueça de adicionar as pastas .github ao seu projeto.
+
+Nela vai conter os templates de issues, pull requests e configuração de CI.
+
+```bash
+.github/
+├── ISSUE_TEMPLATE/
+│   ├── config.yml
+│   ├── bug-report.md
+│   ├── feature-request.md
+│   └── question.md
+├── workflows/  
+│   ├── check-branch-name.yml
+│   └── check-pr-title.yml
+├── pull_request.yml
+```
+
+### Detalhes dos Templates de Issue
+
+- **`ISSUE_TEMPLATE/config.yml`**: 
+  - Configura como os templates de issues são gerenciados.
+  - Desativa a criação de issues em branco.
+  - Define templates específicos para novas tarefas e relatórios de bugs.
+
+- **`ISSUE_TEMPLATE/bug-report.md`**: 
+  - Template para reportar bugs.
+  - Fornece um formato padrão para garantir que todas as informações necessárias sejam incluídas ao reportar um problema.
+  - Inclui seções para descrição do bug, passos para reproduzir, comportamento esperado e capturas de tela.
+
+- **`ISSUE_TEMPLATE/feature-request.md`**: 
+  - Template para solicitações de novas funcionalidades.
+  - Ajuda a padronizar como novas ideias ou melhorias são propostas.
+  - Inclui seções para descrição da funcionalidade, justificativa e possíveis soluções.
+
+- **`ISSUE_TEMPLATE/question.md`**: 
+  - Template para questões ou dúvidas.
+  - Estrutura para que os usuários possam fazer perguntas de forma clara e organizada.
+  - Inclui seções para a pergunta, contexto adicional e links relevantes.
+
+- **`workflows/check-branch-name.yml`**: 
+  - Workflow do GitHub Actions para verificar os nomes das branches.
+  - Garante que sigam um padrão específico para consistência.
+
+- **`workflows/check-pr-title.yml`**: 
+  - Workflow para verificar os títulos dos pull requests.
+  - Assegura que sigam um formato específico para clareza e consistência.
+
+- **`pull_request.yml`**: 
+  - Contém configurações ou automações relacionadas aos pull requests.
+  - Pode incluir rodar testes ou enviar notificações quando um PR é aberto, fechado ou atualizado.
+
+## Estrutura de pastas (Projeto)
 
 ```bash
 src/
